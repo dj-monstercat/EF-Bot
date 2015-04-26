@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/dj-monstercat/Flavorz-bot1/master/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -173,19 +173,19 @@
     var trapbot = {
         version: "1",
         status: false,
-        name: "Flavorz-bot1",
+        name: "EF-Bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/Bot.js",
+        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
         cmdLink: "http://goo.gl/qPOuYn",
-        chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
+        chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Flavorz bar",
+            botName: "EF-Bot",
             language: "english",
-            chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
+            chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
@@ -221,12 +221,12 @@
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "http://goo.gl/SGFnOh",
-            rulesLink: "http://goo.gl/96KCIU",
+            opLink: "",
+            rulesLink: "",
             themeLink: null,
-            fbLink: "http://goo.gl/QGmRD8",
+            fbLink: "",
             youtubeLink: null,
-            website: "http://jsim31.wix.com/edm-nation",
+            website: "",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
