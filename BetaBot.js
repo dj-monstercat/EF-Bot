@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/Flavorz-bot1/master/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -167,25 +167,25 @@
         return m;
     };
 
-    var botCreator = "A secret";
+    var botCreator = "dj-monstercat1";
     var botCreatorIDs = [];
 
     var trapbot = {
         version: "1",
         status: false,
-        name: "EF-Bot",
+        name: "Flavorz-bot1",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
+        scriptLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/Bot.js",
         cmdLink: "http://goo.gl/qPOuYn",
-        chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+        chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "EF-Bot",
+            botName: "Flavorz bar",
             language: "english",
-            chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+            chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
@@ -221,19 +221,19 @@
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "null",
-            rulesLink: "null",
+            opLink: "http://goo.gl/SGFnOh",
+            rulesLink: "http://goo.gl/96KCIU",
             themeLink: null,
-            fbLink: " http://goo.gl/jKRvJw",
+            fbLink: "http://goo.gl/QGmRD8",
             youtubeLink: null,
-            website: "null",
+            website: "http://jsim31.wix.com/edm-nation",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "",
-                OP: ""
+                NSFW: "http://jsim31.wix.com/edm-nation",
+                OP: "http://jsim31.wix.com/edm-nation"
             }
         },
         room: {
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('');
+                    API.sendChat('We have commands, do you want to know wich? Type !commands');
                 }
             },
             queueing: 0,
