@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/edmc-3/master/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -171,13 +171,13 @@
     var botCreatorIDs = [];
 
     var trapbot = {
-        version: "1",
+        version: "4.7.1",
         status: false,
-        name: "EF-Bot",
+        name: "EDM-Nation bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
-        cmdLink: "http://goo.gl/qPOuYn",
-        chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+        scriptLink: "https://rawgit.com/dj-monstercat/edmc-3/master/Bot.js",
+        cmdLink: "http://en-bot-commands.jimdo.com/",
+        chatLink: "https://rawgit.com/dj-monstercat/edmc-3/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -185,7 +185,7 @@
         settings: {
             botName: "EF-Bot",
             language: "english",
-            chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+            chatLink: "https://rawgit.com/dj-monstercat/edmc-3/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
@@ -199,7 +199,7 @@
             voteSkip: false,
             voteSkipLimit: 7,
             timeGuard: true,
-            maximumSongLength: 6,
+            maximumSongLength: 10,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
@@ -217,23 +217,23 @@
             afkRankCheck: "ambassador",
             motdEnabled: false,
             motdInterval: 20,
-            motd: "",
+            motd: "Welcome to EDM Nation remember to favourite the room if you want to return at a later time.",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "null",
-            rulesLink: "null",
+            opLink: "http://goo.gl/SGFnOh",
+            rulesLink: "http://electronicfamilyofficial.jimdo.com/rules/",
             themeLink: null,
-            fbLink: " http://goo.gl/jKRvJw",
+            fbLink: "",
             youtubeLink: null,
-            website: "null",
+            website: "http://electronicfamilyofficial.jimdo.com/",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "",
-                OP: ""
+                NSFW: "http://jsim31.wix.com/edm-nation",
+                OP: "http://jsim31.wix.com/edm-nation"
             }
         },
         room: {
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('');
+                    API.sendChat('We have commands, do you want to know wich? Type !commands');
                 }
             },
             queueing: 0,
