@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/dj-monstercat/edmc-3/master/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -173,11 +173,11 @@
     var trapbot = {
         version: "4.7.1",
         status: false,
-        name: "EDM-Nation bot",
+        name: "EF-Bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/dj-monstercat/edmc-3/master/Bot.js",
+        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
         cmdLink: "http://en-bot-commands.jimdo.com/",
-        chatLink: "https://rawgit.com/dj-monstercat/edmc-3/master/en.json",
+        chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -185,7 +185,7 @@
         settings: {
             botName: "EF-Bot",
             language: "english",
-            chatLink: "https://rawgit.com/dj-monstercat/edmc-3/master/en.json",
+            chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
@@ -224,7 +224,7 @@
             opLink: "http://goo.gl/SGFnOh",
             rulesLink: "http://electronicfamilyofficial.jimdo.com/rules/",
             themeLink: null,
-            fbLink: "",
+            fbLink: "http://goo.gl/jKRvJw",
             youtubeLink: null,
             website: "http://electronicfamilyofficial.jimdo.com/",
             intervalMessages: [],
