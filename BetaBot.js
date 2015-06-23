@@ -167,16 +167,16 @@
         return m;
     };
 
-    var botCreator = "dj-monstercat1";
+    var botCreator = "A secret";
     var botCreatorIDs = [];
 
     var trapbot = {
-        version: "1",
+        version: "4.7.1",
         status: false,
         name: "EF-Bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
-        cmdLink: "http://goo.gl/qPOuYn",
+        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/BetaBot.js",
+        cmdLink: "http://en-bot-commands.jimdo.com/",
         chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
         chat: null,
         loadChat: loadChat,
@@ -199,7 +199,7 @@
             voteSkip: false,
             voteSkipLimit: 7,
             timeGuard: true,
-            maximumSongLength: 6,
+            maximumSongLength: 10,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
@@ -217,16 +217,16 @@
             afkRankCheck: "ambassador",
             motdEnabled: false,
             motdInterval: 20,
-            motd: "",
+            motd: "Welcome to EDM Nation remember to favourite the room if you want to return at a later time.",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "",
-            rulesLink: "",
+            opLink: "http://goo.gl/SGFnOh",
+            rulesLink: "http://electronicfamilyofficial.jimdo.com/rules/",
             themeLink: null,
-            fbLink: "",
+            fbLink: "http://goo.gl/jKRvJw",
             youtubeLink: null,
-            website: "",
+            website: "http://electronicfamilyofficial.jimdo.com/",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -2939,4 +2939,3 @@
 
     loadChat(trapbot.startup);
 }).call(this);
-
