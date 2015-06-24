@@ -2932,10 +2932,63 @@
                         if (typeof trapbot.settings.youtubeLink === "string")
                             API.sendChat(subChat(trapbot.chat.youtube, {name: chat.un, link: trapbot.settings.youtubeLink}));
                     }
-                }
-            }
-        }
+                }   
+            },   
+           
+            ballCommand: {
+                command: ['8ball', 'ask'],
+                rank: 'user',
+                type: 'startsWith',
+                ['Signs point to yes.',
+        'Yes.",
+        'Reply hazy, try again.',
+        'Without a doubt.',
+        'My sources say no.',
+        'As I see it, yes.',
+        'You may rely on it.',
+        'Concentrate and ask again.',
+        'Outlook not so good.',
+        'It is decidedly so.',
+        'Better not tell you now.',
+        'Very doubtful.',
+        'Yes - definitely.',
+        'It is certain.',
+        'Cannot predict now.',
+        'Most likely.',
+        'Ask again later.',
+        'My reply is no.',
+        'Outlook good.',
+        'Don't count on it.',
+        'Yes, in due time.',
+        'My sources say no.',
+        'Definitely not.',
+        'You will have to wait.',
+        'I have my doubts.',
+        'Outlook so so.',
+        'Looks good to me!',
+        'Who knows?',
+        'Looking good!',
+        'Probably.',
+        'Are you kidding?',
+        'Don't bet on it.',
+        'Forget about it.',
+                ],
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!trapbot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                            var crowd = API.getUsers();
+                            var msg = chat.message;
+                            var argument = msg.substring(cmd.length + 1);
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomBall = Math.floor(Math.random() * trapbot.chat.balls.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            API.sendChat(subChat(trapbot.chat.ball, {name: chat.un, botname: trapbot.settings.botName, question: argument, response: trapbot.chat.balls[randomBall]}));
+                    }                        
+                }              
+            }                 
+        }  
     };
-
+    
     loadChat(trapbot.startup);
 }).call(this);
