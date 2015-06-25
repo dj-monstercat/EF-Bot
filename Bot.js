@@ -171,7 +171,7 @@
     var botCreatorIDs = [];
 
     var trapbot = {
-        version: "4.7.1",
+        version: "4.7.5",
         status: false,
         name: "EF-Bot",
         loggedInID: null,
@@ -232,8 +232,8 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "http://jsim31.wix.com/edm-nation",
-                OP: "http://jsim31.wix.com/edm-nation"
+                NSFW: "null",
+                OP: "null"
             }
         },
         room: {
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('We have commands, do you want to know wich? Type !commands');
+                    API.sendChat('');
                 }
             },
             queueing: 0,
