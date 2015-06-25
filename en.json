@@ -8,8 +8,8 @@
     "online": "/me EF-Bot v%%VERSION%% online!",
 
 
-    "welcome": "/me %%NAME%% hola! - hello! ;)",
-    "welcomeback": "/me %%NAME%% hola! - hello! ;)",
+    "welcome": "/me hola! - hello! @%%NAME%% ;)",
+    "welcomeback": "/me hola! - hello! %%NAME%% ;)",
     "songknown": "",
     "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, you need permission to play longer songs.",
     "permissionownsong": "/me :up: @%%NAME%% has permission to play their own production!",
