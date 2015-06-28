@@ -171,7 +171,7 @@
     var botCreatorIDs = [];
 
     var trapbot = {
-        version: "4.7.5",
+        version: "4.7.8",
         status: false,
         name: "EF-Bot",
         loggedInID: null,
@@ -230,7 +230,7 @@
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
-            commandLiteral: "!",
+            commandLiteral: "#",
             blacklists: {
                 NSFW: "null",
                 OP: "null"
