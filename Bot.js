@@ -230,7 +230,7 @@
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
-            commandLiteral: "#",
+            commandLiteral: "!",
             blacklists: {
                 NSFW: "null",
                 OP: "null"
