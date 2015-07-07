@@ -1,6 +1,6 @@
 (function () {
 
-     API.chatLog("Connecting... to EDM Nation servers");
+     API.chatLog("the script is down right now. we will have it back up soon");
                     }
                 }
             }
