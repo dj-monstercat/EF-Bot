@@ -142,7 +142,7 @@
     "pong": "/me Pong!",
     "reload": "/me BRB.",
     "removenotinwl": "/me [@%%NAME%%] Specified user @%%USERNAME%% is not in the waitlist.",
-    "roomrules": "/me Sorry the page is currently down.",
+    "roomrules": "/me Please Check Our RULES: http://goo.gl/tS9oeF",
     "sessionstats": "/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
     "skip": "/me [%%NAME%% used skip.]",
     "madeby": "/me This bot was made by Edmc-Nation team.",
