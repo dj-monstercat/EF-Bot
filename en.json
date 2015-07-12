@@ -34,6 +34,9 @@
         "Don't bet on it.",
         "Forget about it."
     ],
+    "quiz": [
+        "You are too stupid for one!",
+        ],
     "nodatafound": "No previous data found.",
     "retrievingdata": "Retrieving previously stored data.",
     "datarestored": "Previously stored data successfully retrieved.",
