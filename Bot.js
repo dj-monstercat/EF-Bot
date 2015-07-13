@@ -2362,26 +2362,7 @@
                         API.sendChat(trapbot.chat.pong)
                     }
                 }   
-            },   
-           
-            quizCommand: {
-                command: ['quiz', 'question'],
-                rank: 'user',
-                type: 'startsWith',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!trapbot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                            var crowd = API.getUsers();
-                            var msg = chat.message;
-                            var argument = msg.substring(cmd.length + 1);
-                            var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomBall = Math.floor(Math.random() * trapbot.chat.balls.length);
-                            var randomSentence = Math.floor(Math.random() * 1);
-                            API.sendChat(subChat(trapbot.chat.quiz, {name: chat.un, botname: trapbot.settings.botName, question: argument, response: trapbot.chat.quiz[randomBall]}));
-                    }                        
-                }              
-            },                 
+            },  
                 
             refreshCommand: {
                 command: 'refresh',
