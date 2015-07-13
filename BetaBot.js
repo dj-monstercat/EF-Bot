@@ -1848,10 +1848,11 @@
                         else {
                             trapbot.settings.filterChat = !trapbot.settings.filterChat;
                             return API.sendChat(subChat(trapbot.chat.toggleon, {name: chat.un, 'function': trapbot.chat.chatfilter}));
-                    }             
-                }                         
-            },        
-            
+                        }
+                    }
+                }
+            },
+
             helpCommand: {
                 command: 'help',
                 rank: 'user',
@@ -2360,9 +2361,9 @@
                     else {
                         API.sendChat(trapbot.chat.pong)
                     }
-                }
-            },
-
+                }   
+            },  
+                
             refreshCommand: {
                 command: 'refresh',
                 rank: 'manager',
