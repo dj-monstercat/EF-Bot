@@ -140,7 +140,7 @@
     "muterank": "/me [@%%NAME%%] You can't mute persons with an equal or higher rank than you.",
     "oplist": "/me Sorry the page is currently down.",
     "pong": "/me Pong!",
-    "reload": "/me BRB.",
+    "reload": "/me Reloading....",
     "removenotinwl": "/me [@%%NAME%%] Specified user @%%USERNAME%% is not in the waitlist.",
     "roomrules": "/me Please Check Our RULES: http://goo.gl/tS9oeF",
     "sessionstats": "/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
