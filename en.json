@@ -161,5 +161,5 @@
     "website": "/me http://goo.gl/2pFxSO",
     "twitter": "/me Follow Us On Twitter: http://goo.gl/CAjtBf",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: https://goo.gl/aubXTk ",
-    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%% :heart: | %%GRABS%% :purple_heart: | %%MEHS%% :green_heart:"
+    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%% :+1: | %%GRABS%% :star: | %%MEHS%% :-1:"
 }
