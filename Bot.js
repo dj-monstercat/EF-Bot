@@ -217,7 +217,7 @@
             afkRankCheck: "ambassador",
             motdEnabled: false,
             motdInterval: 20,
-            motd: "Welcome to EDM Nation remember to favourite the room if you want to return at a later time.",
+            motd: "",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('!reload');
+                    API.sendChat('Check out JWS (coming soon): http://djsim189.wix.com/jordan-web-service');
                 }
             },
             queueing: 0,
