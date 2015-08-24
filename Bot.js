@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('Check out JWS (coming soon): http://djsim189.wix.com/jordan-web-service');
+                    API.sendChat('@djs read the rules before you play: http://electronicfamilyofficial.jimdo.com/rules/');
                 }
             },
             queueing: 0,
