@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/dj-monstercat/-t--BoT/master/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -171,7 +171,7 @@
     var botCreatorIDs = [];
 
     var trapbot = {
-        version: "4.7.1",
+        version: "4.8.8",
         status: false,
         name: "EF-Bot",
         loggedInID: null,
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('!reload');
+                    API.sendChat('Do you want to support us? check out the shop: http://djsim189.wix.com/electronic-family');
                 }
             },
             queueing: 0,
