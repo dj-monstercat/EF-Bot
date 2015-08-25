@@ -44,7 +44,6 @@
         return chat;
     };
     
-    API.sendChat('Loading...'); 
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
