@@ -1,5 +1,5 @@
 (function () {
-    
+
     API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
@@ -43,11 +43,11 @@
         }
         return chat;
     };
-    
+
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/-t--BoT/master/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -173,19 +173,19 @@
     var trapbot = {
         version: "4.7.1",
         status: false,
-        name: "EF-Bot",
+        name: "t--BoT",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/BetaBot.js",
+        scriptLink: "https://rawgit.com/dj-monstercat/-t--BoT/master/Bot.js",
         cmdLink: "http://en-bot-commands.jimdo.com/",
-        chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+        chatLink: "https://rawgit.com/dj-monstercat/-t--BoT/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "EF-Bot",
+            botName: "∂υ๒รtєρ-BoT",
             language: "english",
-            chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+            chatLink: "https://rawgit.com/dj-monstercat/-t--BoT/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
@@ -221,12 +221,12 @@
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "http://goo.gl/SGFnOh",
-            rulesLink: "http://electronicfamilyofficial.jimdo.com/rules/",
+            opLink: "",
+            rulesLink: "",
             themeLink: null,
             fbLink: "http://goo.gl/jKRvJw",
             youtubeLink: null,
-            website: "http://electronicfamilyofficial.jimdo.com/",
+            website: "",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('Do you want to support us even more? take a look at our shop: http://djsim189.wix.com/electronic-family');
+                    API.sendChat('!reload');
                 }
             },
             queueing: 0,
