@@ -1,6 +1,5 @@
 (function () {
     
-    API.sendchat("Loading... EF-Bot");
     API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
@@ -44,7 +43,8 @@
         }
         return chat;
     };
-
+    
+   API.sendChat('Loading...'); 
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
