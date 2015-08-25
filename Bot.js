@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('Do you want to support us? check out the shop: http://djsim189.wix.com/electronic-family');
+                    API.sendChat('Lol i love pizza');
                 }
             },
             queueing: 0,
