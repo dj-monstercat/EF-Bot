@@ -183,7 +183,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "EF-Bot",
+            botName: "Checking-Bot",
             language: "english",
             chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
             maximumAfk: 120,
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('Lol i love pizza');
+                    API.sendChat('I love you!');
                 }
             },
             queueing: 0,
