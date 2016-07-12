@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
+        $.get("http://dj-monstercat.github.io/EF-Bot/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -175,9 +175,9 @@
         status: false,
         name: "Mixtrack bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
+        scriptLink: "http://dj-monstercat.github.io/EF-Bot/Bot.js",
         cmdLink: "",
-        chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+        chatLink: "http://dj-monstercat.github.io/EF-Bot/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -185,7 +185,7 @@
         settings: {
             botName: "Checking-Bot",
             language: "english",
-            chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+            chatLink: "http://dj-monstercat.github.io/EF-Bot/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
