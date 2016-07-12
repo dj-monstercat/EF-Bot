@@ -173,10 +173,10 @@
     var trapbot = {
         version: "4.8.8",
         status: false,
-        name: "EF-Bot",
+        name: "Mixtrack bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
-        cmdLink: "http://en-bot-commands.jimdo.com/",
+        cmdLink: "",
         chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
         chat: null,
         loadChat: loadChat,
@@ -221,19 +221,19 @@
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "",
-            rulesLink: "",
+            opLink: null,
+            rulesLink: null,
             themeLink: null,
-            fbLink: "http://goo.gl/jKRvJw",
+            fbLink: null,
             youtubeLink: null,
-            website: "",
+            website: null,
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "http://jsim31.wix.com/edm-nation",
-                OP: "http://jsim31.wix.com/edm-nation"
+                NSFW: "",
+                OP: ""
             }
         },
         room: {
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('I love you!');
+                    API.sendChat('Join my stream http://mixtrack.club');
                 }
             },
             queueing: 0,
