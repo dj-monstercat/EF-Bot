@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://mixtrack.club/port79/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -175,9 +175,9 @@
         status: false,
         name: "FlavorBar - v3",
         loggedInID: null,
-        scriptLink: "https://mixtrack.club/port79/Bot.js",
+        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
         cmdLink: "",
-        chatLink: "https://mixtrack.club/port79/en.json",
+        chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -185,7 +185,7 @@
         settings: {
             botName: "FlavorBar - v3",
             language: "english",
-            chatLink: "https://mixtrack.club/port79/en.json",
+            chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
