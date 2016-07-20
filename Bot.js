@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/dj-monstercat/EF-Bot/master/langIndex.json", function (json) {
+        $.get("https://mixtrack.club/port79/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -173,24 +173,24 @@
     var trapbot = {
         version: "4.8.8",
         status: false,
-        name: "Mixtrack bot",
+        name: "FlavorBar - v3",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/Bot.js",
+        scriptLink: "https://mixtrack.club/port79/Bot.js",
         cmdLink: "",
-        chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+        chatLink: "https://mixtrack.club/port79/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Checking-Bot",
+            botName: "FlavorBar - v3",
             language: "english",
-            chatLink: "https://rawgit.com/dj-monstercat/EF-Bot/master/en.json",
+            chatLink: "https://mixtrack.club/port79/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
-            blacklistEnabled: true,
+            blacklistEnabled: false,
             lockdownEnabled: false,
             lockGuard: false,
             maximumLocktime: 10,
@@ -220,7 +220,7 @@
             motd: "",
             filterChat: true,
             etaRestriction: false,
-            welcome: true,
+            welcome: false,
             opLink: null,
             rulesLink: null,
             themeLink: null,
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('Join my stream http://mixtrack.club');
+                    API.sendChat('Port: 79 is running @MixTrack.club');
                 }
             },
             queueing: 0,
